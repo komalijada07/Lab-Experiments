@@ -1,37 +1,57 @@
-# Experiment 1: Importing Data and Basic Exploration
 
-## Objective
+import pandas as pd
 
-To learn how to create, save, import and explore datasets using Python and Pandas.
 
-## Topics Covered
+def main():
 
-- Creating a sample dataset
-- Creating a Pandas DataFrame
-- Saving data as CSV, Excel and JSON
-- Importing CSV, Excel and JSON files
-- Using head()
-- Using info()
-- Using describe()
-- Using shape
+    # ------------------------------
+    # 1. Creating Sample Dataset
+    # ------------------------------
 
-## Technologies Used
+    data = {
+        "Student": ["Ravi", "Sita", "Kiran", "Anu", "John"],
+        "Marks": [85, 90, 78, 92, 88],
+        "Age": [20, 21, 19, 22, 20]
+    }
 
-- Python
-- Pandas
+    df = pd.DataFrame(data)
 
-## Dataset
+    # ------------------------------
+    # 2. Saving Dataset into
+    #    CSV, Excel, and JSON files
+    # ------------------------------
 
-The dataset contains student names, marks and ages.
+    df.to_csv("students.csv", index=False)
+    df.to_excel("students.xlsx", index=False)
+    df.to_json("students.json", orient="records")
 
-| Student | Marks | Age |
-|---------|-------|-----|
-| Ravi | 85 | 20 |
-| Sita | 90 | 21 |
-| Kiran | 78 | 19 |
-| Anu | 92 | 22 |
-| John | 88 | 20 |
+    # ------------------------------
+    # 3. Importing Data
+    # ------------------------------
 
-## Learning Outcome
+    csv_data = pd.read_csv("students.csv")
+    excel_data = pd.read_excel("students.xlsx")
+    json_data = pd.read_json("students.json")
 
-This experiment helps understand basic data loading, storage and exploration using Pandas.
+    # ------------------------------
+    # 4. Basic Exploration
+    # ------------------------------
+
+    print("\n===== CSV DATA =====")
+    print(csv_data)
+
+    print("\n===== head() =====")
+    print(csv_data.head())
+
+    print("\n===== info() =====")
+    csv_data.info()
+
+    print("\n===== describe() =====")
+    print(csv_data.describe())
+
+    print("\n===== shape =====")
+    print(csv_data.shape)
+
+
+if __name__ == "__main__":
+    main()
