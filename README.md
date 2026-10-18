@@ -261,8 +261,8 @@ max      95.00000
 Name: Marks, dtype: float64
 ```
 
-### Experiment 5 Output:
-
+### 🔗 Experiment 5 Output:
+```text
 EXPERIMENT 5: DATA TRANSFORMATION AND SCALING
 
 Original Data
@@ -283,27 +283,25 @@ After Normalization
 
 After Standardization
    Salary  Salary_Standardized
-0   20000            -1.183216
-1   25000            -0.828251
-2   30000            -0.473286
-3   40000             0.236644
-4   50000             1.656109
+0   20000            -1.161895
+1   25000            -0.714997
+2   30000            -0.268099
+3   40000             0.625697
+4   50000             1.519493
 
 After Log Transformation
    Salary  Salary_Log
 0   20000    9.903488
-1   25000   10.126631
-2   30000   10.308953
-3   40000   10.596635
-4   50000   10.819778
+1   25000    10.126631
+2   30000    10.308953
+3   40000    10.596635
+4   50000    10.819778
 
 After Label Encoding
   Department  Department_Label
 0         HR                 1
 1         IT                 2
 2    Finance                 0
-3         IT                 2
-4         HR                 1
 
 After One-Hot Encoding
    Bangalore  Chennai  Hyderabad
@@ -314,5 +312,8 @@ After One-Hot Encoding
 4          0        1          0
 
 Experiment 5 Completed Successfully!
+```
+
+
 
 
