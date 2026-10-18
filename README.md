@@ -368,6 +368,56 @@ Advanced Slicing using iloc
 1   Bhanu     72        ECE
 2  Charan     90        CSE
 ```
+### 🔗 Experiment 7 Output:
+```text
+Original DataFrame
+  Department  Gender  Marks  Salary
+0        CSE    Male     85   50000
+1        CSE  Female     90   52000
+2        ECE    Male     78   48000
+3        ECE  Female     88   51000
+4        EEE    Male     70   45000
+5        EEE  Female     95   55000
+
+1. Grouping Data using groupby()
+Department
+CSE    87.5
+ECE    83.0
+EEE    82.5
+Name: Marks, dtype: float64
+
+2. Multiple Aggregate Statistics
+              sum     mean    max    min
+Department                              
+CSE        102000  51000.0  52000  50000
+ECE         99000  49500.0  51000  48000
+EEE        100000  50000.0  55000  45000
+
+3. Grouping by Multiple Columns
+Department  Gender
+CSE         Female    90.0
+            Male      85.0
+ECE         Female    88.0
+            Male      78.0
+EEE         Female    95.0
+            Male      70.0
+Name: Marks, dtype: float64
+
+4. Creating Pivot Table for Average Marks
+Gender      Female  Male
+Department              
+CSE           90.0  85.0
+ECE           88.0  78.0
+EEE           95.0  70.0
+
+5. Pivot Table for Salary Statistics
+              mean            sum       
+Gender      Female     Male Female   Male
+Department                              
+CSE        52000.0  50000.0  52000  50000
+ECE        51000.0  48000.0  51000  48000
+EEE        55000.0  45000.0  55000  45000
+```
 
 
 
