@@ -132,5 +132,65 @@ Marks    1
 City     1
 dtype: int64
 ```
+### 🔗 Experiment 3 Output:
+```text
+===== ORIGINAL DATASET =====
+    Age  Marks       City
+0  20.0   85.0     Guntur
+1  21.0    NaN       None
+2   NaN   78.0  Hyderabad
+3  22.0    NaN       None
+4  20.0   88.0    Chennai
+
+===== MEAN IMPUTATION =====
+     Age      Marks       City
+0  20.75  85.000000     Guntur
+1  21.00  83.666667       None
+2  20.75  78.000000  Hyderabad
+3  22.00  83.666667       None
+4  20.00  88.000000    Chennai
+
+===== MEDIAN IMPUTATION =====
+    Age  Marks       City
+0  20.5   85.0     Guntur
+1  21.0   85.0       None
+2  20.5   78.0  Hyderabad
+3  22.0   85.0       None
+4  20.0   88.0    Chennai
+
+===== MODE IMPUTATION =====
+    Age  Marks       City
+0  20.0   85.0     Guntur
+1  21.0    NaN    Chennai
+2   NaN   78.0  Hyderabad
+3  22.0    NaN    Chennai
+4  20.0   88.0    Chennai
+
+===== FORWARD FILL =====
+    Age  Marks       City
+0  20.0   85.0     Guntur
+1  21.0   85.0     Guntur
+2  21.0   78.0  Hyderabad
+3  22.0   78.0  Hyderabad
+4  20.0   88.0    Chennai
+
+===== BACKWARD FILL =====
+    Age  Marks       City
+0  20.0   85.0     Guntur
+1  21.0   78.0  Hyderabad
+2  22.0   78.0  Hyderabad
+3  22.0   88.0    Chennai
+4  20.0   88.0    Chennai
+
+===== DROP ROWS =====
+    Age  Marks     City
+0  20.0   85.0   Guntur
+4  20.0   88.0  Chennai
+
+===== DROP COLUMNS =====
+Empty DataFrame
+Columns: []
+Index: [0, 1, 2, 3, 4]
+```
 
 
