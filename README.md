@@ -55,8 +55,50 @@ def main():
 
 if __name__ == "__main__":
     main()
-### Experiment 1 Output:
+### 🔗 Experiment 1 Output:
 ```text
-Enter Number: 5
-Factorial of 5 is: 120
+========== CSV DATA ==========
+  Student  Marks  Age
+0    Ravi     85   20
+1    Sita     90   21
+2   Kiran     78   19
+3     Anu     92   22
+4    John     88   20
+
+========== head() ==========
+  Student  Marks  Age
+0    Ravi     85   20
+1    Sita     90   21
+2   Kiran     78   19
+3     Anu     92   22
+4    John     88   20
+
+========== info() ==========
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 5 entries, 0 to 4
+Data columns (total 3 columns):
+ #   Column   Non-Null Count  Dtype 
+---  ------   --------------  ----- 
+ 0   Student  5 non-null      object
+ 1   Marks    5 non-null      int64 
+ 2   Age      5 non-null      int64 
+dtypes: int64(2), object(1)
+memory usage: 252.0+ bytes
+None
+
+========== describe() ==========
+           Marks        Age
+count   5.000000   5.000000
+mean   86.600000  20.400000
+std     5.412948   1.140175
+min    78.000000  19.000000
+25%    85.000000  20.000000
+50%    88.000000  20.000000
+75%    90.000000  21.000000
+max    92.000000  22.000000
+
+========== shape ==========
+(5, 3)
 ```
+
+
