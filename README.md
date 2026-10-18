@@ -529,6 +529,32 @@ Name: Marks, dtype: float64
 *Combines box plot features with a density plot to reveal the structural symmetry of the Age distribution.*
 ![Violin Plot Demo](https://pydata.org)
 
+### 🔗 Experiment 10 Output:
+```text
+Dataset:
+   Maths  Science  English
+0     75       68       75
+1     85       79       82
+2     90       95       90
+3     60       70       76
+4     95       88       85
+5     50       61       89
+6     70       72       68
+7     80       85       84
+8     92       94       91
+9     73       76       73
 
+Correlation Matrix:
+            Maths   Science   English
+Maths    1.000000  0.947231  0.505051
+Science  0.947231  1.000000  0.428387
+English  0.505051  0.428387  1.000000
+```
+
+#### 📊 Visualizations Generated:
+1. **Scatter Plot:** Visualizes the relationship between Maths and Science marks.
+2. **Correlation Heatmap:** A color-coded matrix showing the strength of relationships between all three subjects.
+3. **Pair Plot:** Generates a grid of pairwise scatter plots and histograms for all numerical variables.
+4. 
 
 
