@@ -564,4 +564,52 @@ English  0.505051  0.428387  1.000000
 ##### 3. Pair Plot Matrix (Multivariate Analysis)
 *Generates a comprehensive grid of pairwise scatter plots and histograms for all features.*
 ![Pair Plot](https://pydata.org)
+### 🔗 Experiment 11 Output:
+```text
+Original Dataset
+          Date  Sales
+0   2025-01-01    120
+1   2025-02-01    135
+2   2025-03-01    150
+3   2025-04-01    170
+4   2025-05-01    165
+5   2025-06-01    180
+6   2025-07-01    210
+7   2025-08-01    220
+8   2025-09-01    200
+9   2025-10-01    190
+10  2025-11-01    175
+11  2025-12-01    160
+
+Dataset after Parsing Date Column:
+Date     datetime64[ns]
+Sales             int64
+dtype: object
+
+Dataset with Datetime Index:
+            Sales
+Date             
+2025-01-01    120
+2025-02-01    135
+2025-03-01    150
+2025-04-01    170
+2025-05-01    165
+2025-06-01    180
+2025-07-01    210
+2025-08-01    220
+2025-09-01    200
+2025-10-01    190
+2025-11-01    175
+2025-12-01    160
+```
+
+#### 📊 Time Series Visualizations:
+
+##### 1. Sales Trend Line Plot
+*Displays upward or downward sales movement over the months.*
+![Trend Line Plot](https://pydata.org)
+
+##### 2. Monthly Seasonality Bar Plot
+*Helps identify repeating seasonal behaviors or monthly patterns.*
+![Seasonality Bar Plot](https://pydata.org)
 
