@@ -314,6 +314,60 @@ After One-Hot Encoding
 Experiment 5 Completed Successfully!
 ```
 
+### 🔗 Experiment 6 Output:
+```text
+Original DataFrame
+   RollNo    Name  Marks Department
+0     101    Arun     85        CSE
+1     102   Bhanu     72        ECE
+2     103  Charan     90        CSE
+3     104   Divya     65        EEE
+4     105    Esha     88        ECE
+
+Selecting Name and Marks Columns
+     Name  Marks
+0    Arun     85
+1   Bhanu     72
+2  Charan     90
+3   Divya     65
+4    Esha     88
+
+Selecting Row with Index 2
+RollNo           103
+Name          Charan
+Marks             90
+Department       CSE
+Name: 2, dtype: object
+
+Slicing Rows from Index 1 to 3
+   RollNo    Name  Marks Department
+1     102   Bhanu     72        ECE
+2     103  Charan     90        CSE
+3     104   Divya     65        EEE
+
+Students with Marks Greater than 80
+   RollNo    Name  Marks Department
+0     101    Arun     85        CSE
+2     103  Charan     90        CSE
+4     105    Esha     88        ECE
+
+CSE Students with Marks Greater than 80
+   RollNo    Name  Marks Department
+0     101    Arun     85        CSE
+2     103  Charan     90        CSE
+
+Advanced Slicing using loc
+    Name  Marks
+1  Bhanu     72
+2  Charan     90
+3   Divya     65
+
+Advanced Slicing using iloc
+     Name  Marks Department
+0    Arun     85        CSE
+1   Bhanu     72        ECE
+2  Charan     90        CSE
+```
 
 
 
