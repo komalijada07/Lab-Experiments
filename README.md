@@ -192,5 +192,73 @@ Empty DataFrame
 Columns: []
 Index: [0, 1, 2, 3, 4]
 ```
+### 🔗 Experiment 4 Output:
+```text
+====== ORIGINAL DATASET ======
+    Name  Marks
+0   Ravi     95
+1   Sita     90
+2  Kiran     78
+3   Ravi     85
+4   John    300
+5    Anu     88
+
+====== DUPLICATE ROWS ======
+Empty DataFrame
+Columns: [Name, Marks]
+Index: []
+
+====== DATASET AFTER REMOVING DUPLICATES ======
+    Name  Marks
+0   Ravi     95
+1   Sita     90
+2  Kiran     78
+3   Ravi     85
+4   John    300
+5    Anu     88
+
+====== Z-SCORES ======
+    Name  Marks   Z_score
+0   Ravi     95 -0.354143
+1   Sita     90 -0.418714
+2  Kiran     78 -0.573686
+3   Ravi     85 -0.483286
+4   John    300  2.288597
+5    Anu     88 -0.444543
+
+====== DETECTED OUTLIERS ======
+   Name  Marks   Z_score
+4  John    300  2.288597
+
+====== DATA AFTER REMOVING OUTLIERS ======
+    Name  Marks   Z_score
+0   Ravi     95 -0.354143
+1   Sita     90 -0.418714
+2  Kiran     78 -0.573686
+3   Ravi     85 -0.483286
+5    Anu     88 -0.444543
+
+====== DISTRIBUTION BEFORE REMOVING OUTLIERS ======
+count      6.000000
+mean     122.666667
+std       86.666410
+min       78.000000
+25%       85.750000
+50%       89.000000
+75%       93.750000
+max      300.000000
+Name: Marks, dtype: float64
+
+====== DISTRIBUTION AFTER REMOVING OUTLIERS ======
+count     5.00000
+mean     87.20000
+std       6.37965
+min      78.00000
+25%      85.00000
+50%      88.00000
+75%      90.00000
+max      95.00000
+Name: Marks, dtype: float64
+```
 
 
