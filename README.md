@@ -261,4 +261,58 @@ max      95.00000
 Name: Marks, dtype: float64
 ```
 
+### Experiment 5 Output:
+
+EXPERIMENT 5: DATA TRANSFORMATION AND SCALING
+
+Original Data
+   Age  Salary Department       City
+0   18   20000         HR  Hyderabad
+1   22   25000         IT    Chennai
+2   25   30000    Finance  Bangalore
+3   30   40000         IT  Hyderabad
+4   35   50000         HR    Chennai
+
+After Normalization
+   Age  Age_Normalized
+0   18        0.000000
+1   22        0.235294
+2   25        0.411765
+3   30        0.705882
+4   35        1.000000
+
+After Standardization
+   Salary  Salary_Standardized
+0   20000            -1.183216
+1   25000            -0.828251
+2   30000            -0.473286
+3   40000             0.236644
+4   50000             1.656109
+
+After Log Transformation
+   Salary  Salary_Log
+0   20000    9.903488
+1   25000   10.126631
+2   30000   10.308953
+3   40000   10.596635
+4   50000   10.819778
+
+After Label Encoding
+  Department  Department_Label
+0         HR                 1
+1         IT                 2
+2    Finance                 0
+3         IT                 2
+4         HR                 1
+
+After One-Hot Encoding
+   Bangalore  Chennai  Hyderabad
+0          0        0          1
+1          0        1          0
+2          1        0          0
+3          0        0          1
+4          0        1          0
+
+Experiment 5 Completed Successfully!
+
 
