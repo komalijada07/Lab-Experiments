@@ -613,3 +613,34 @@ Date
 *Helps identify repeating seasonal behaviors or monthly patterns.*
 ![Seasonality Bar Plot](https://pydata.org)
 
+### 🔗 Experiment 12 Output:
+```text
+Dataset:
+  Month  Sales  Profit Region
+0   Jan    120      30   East
+1   Feb    150      40   West
+2   Mar    170      45  North
+3   Apr    160      42  South
+4   May    180      50   East
+5   Jun    200      55   West
+6   Jul    210      60  North
+7   Aug    230      65  South
+8   Sep    220      63   East
+9   Oct    240      70   West
+```
+
+#### 🌐 Interactive Dashboard Visualizations:
+
+##### 1. Interactive Line Graph
+*Displays the chronological trend of Monthly Sales with hovering data points.*
+![Interactive Line Chart](https://plotly.com)
+
+##### 2. Interactive Bar Graph
+*Visualizes Monthly Profit segmented by different geographical regions.*
+![Interactive Bar Chart](https://plotly.com)
+
+##### 3. Complete Dashboard Layout (Dash App Interface)
+*Combines all interactive plots into a single, cohesive web application framework.*
+![Dashboard Layout](https://plotly.com)
+
+ 
