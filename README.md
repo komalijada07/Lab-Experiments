@@ -100,5 +100,37 @@ max    92.000000  22.000000
 ========== shape ==========
 (5, 3)
 ```
+### 🔗 Experiment 2 Output:
+```text
+========== DATASET ==========
+    Name   Age  Marks        City
+0   Ravi  20.0   85.0      Guntur
+1   Sita  21.0   90.0  Vijayawada
+2  Kiran   NaN   78.0        None
+3    Anu  22.0    NaN   Hyderabad
+4   John  20.0   88.0     Chennai
+
+========== DATA TYPES ==========
+Name      object
+Age      float64
+Marks    float64
+City      object
+dtype: object
+
+========== MISSING VALUES USING isnull() ==========
+    Name    Age  Marks   City
+0  False  False  False  False
+1  False  False  False  False
+2  False   True  False   True
+3  False  False   True  False
+4  False  False  False  False
+
+========== TOTAL MISSING VALUES USING sum() ==========
+Name     0
+Age      1
+Marks    1
+City     1
+dtype: int64
+```
 
 
