@@ -55,3 +55,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+### Experiment 1 Output:
+```text
+Enter Number: 5
+Factorial of 5 is: 120
+```
