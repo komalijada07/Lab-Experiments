@@ -551,10 +551,17 @@ Science  0.947231  1.000000  0.428387
 English  0.505051  0.428387  1.000000
 ```
 
-#### 📊 Visualizations Generated:
-1. **Scatter Plot:** Visualizes the relationship between Maths and Science marks.
-2. **Correlation Heatmap:** A color-coded matrix showing the strength of relationships between all three subjects.
-3. **Pair Plot:** Generates a grid of pairwise scatter plots and histograms for all numerical variables.
-4. 
+#### 📊 Bivariate & Multivariate Visualizations:
 
+##### 1. Bivariate Scatter Plot
+*Shows the relationship between Maths and Science marks.*
+![Scatter Plot](https://pydata.org)
+
+##### 2. Correlation Matrix Heatmap
+*Displays the correlation strength between subjects using a color-coded grid.*
+![Heatmap](https://pydata.org)
+
+##### 3. Pair Plot Matrix (Multivariate Analysis)
+*Generates a comprehensive grid of pairwise scatter plots and histograms for all features.*
+![Pair Plot](https://pydata.org)
 
