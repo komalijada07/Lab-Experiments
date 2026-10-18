@@ -418,6 +418,89 @@ CSE        52000.0  50000.0  52000  50000
 ECE        51000.0  48000.0  51000  48000
 EEE        55000.0  45000.0  55000  45000
 ```
+### 🔗 Experiment 8 Output:
+```text
+DataFrame 1
+   ID    Name  Marks
+0   1    Arun     85
+1   2    Bala     90
+2   3  Charan     78
+3   4   David     88
+
+DataFrame 2
+   ID Department       City
+0   3        CSE  Hyderabad
+1   4        ECE    Chennai
+2   5        EEE      Delhi
+3   6       MECH     Mumbai
+
+DataFrame 3
+   ID    Name  Marks
+0   7   Eswar     92
+1   8  Farhan     81
+
+Inner Merge
+   ID    Name  Marks Department       City
+0   3  Charan     78        CSE  Hyderabad
+1   4   David     88        ECE    Chennai
+
+Left Merge
+   ID    Name  Marks Department       City
+0   1    Arun     85        NaN        NaN
+1   2    Bala     90        NaN        NaN
+2   3  Charan     78        CSE  Hyderabad
+3   4   David     88        ECE    Chennai
+
+Right Merge
+   ID    Name  Marks Department       City
+0   3  Charan   78.0        CSE  Hyderabad
+1   4   David   88.0        ECE    Chennai
+2   5     NaN    NaN        EEE      Delhi
+3   6     NaN    NaN       MECH     Mumbai
+
+Outer Merge
+   ID    Name  Marks Department       City
+0   1    Arun   85.0        NaN        NaN
+1   2    Bala   90.0        NaN        NaN
+2   3  Charan   78.0        CSE  Hyderabad
+3   4   David   88.0        ECE    Chennai
+4   5     NaN    NaN        EEE      Delhi
+5   6     NaN    NaN       MECH     Mumbai
+
+Row-wise Concatenation
+   ID    Name  Marks
+0   1    Arun     85
+1   2    Bala     90
+2   3  Charan     78
+3   4   David     88
+4   7   Eswar     92
+5   8  Farhan     81
+
+Column-wise Concatenation
+   ID    Name  Marks  ID Department       City
+0   1    Arun     85   3        CSE  Hyderabad
+1   2    Bala     90   4        ECE    Chennai
+2   3  Charan     78   5        EEE      Delhi
+3   4   David     88   6       MECH     Mumbai
+
+Outer Merge with Missing Values
+   ID    Name  Marks Department       City
+0   1    Arun   85.0        NaN        NaN
+1   2    Bala   90.0        NaN        NaN
+2   3  Charan   78.0        CSE  Hyderabad
+3   4   David   88.0        ECE    Chennai
+4   5     NaN    NaN        EEE      Delhi
+5   6     NaN    NaN       MECH     Mumbai
+
+After Handling Missing Values
+   ID           Name          Marks     Department           City
+0   1           Arun           85.0  Not Available  Not Available
+1   2           Bala           90.0  Not Available  Not Available
+2   3         Charan           78.0            CSE      Hyderabad
+3   4          David           88.0            ECE        Chennai
+4   5  Not Available  Not Available            EEE          Delhi
+5   6  Not Available  Not Available           MECH         Mumbai
+```
 
 
 
