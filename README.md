@@ -501,6 +501,24 @@ After Handling Missing Values
 4   5  Not Available  Not Available            EEE          Delhi
 5   6  Not Available  Not Available           MECH         Mumbai
 ```
+### 🔗 Experiment 9 Output:
+```text
+Statistical Summary of Marks
+count     20.000000
+mean     201.218335
+std       22.569947
+min      152.143714
+25%      191.135759
+50%      201.077271
+75%      214.281896
+max      239.120786
+Name: Marks, dtype: float64
+```
 
+#### 📊 Generated Plots & Visualizations:
+1. **Histogram Plot:** Shows the continuous distribution of Marks with dashed lines indicating the Mean and Median values.
+2. **Box Plot:** Visualizes the distribution of Age, displaying the median, quartiles, and potential outliers.
+3. **Violin Plot:** Combines box plot features with a density plot to reveal the structural symmetry of the Age distribution.
+4. 
 
 
