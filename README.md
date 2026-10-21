@@ -541,8 +541,9 @@ Maths    1.000000  0.947231  0.505051
 Science  0.947231  1.000000  0.428387
 English  0.505051  0.428387  1.000000
 ```
- 
-![Experiment 10 Output](experiment10.png)
+ <img src="scatter_plot.png" width="600">
+<img src="correlation_heatmap.png" width="600">
+<img src="pair_plot.png" width="600">
 
 ### 🔗 Experiment 11 Output:
 ```text
