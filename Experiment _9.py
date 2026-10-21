@@ -18,41 +18,69 @@ def main():
     })
 
     # Statistical Summary
-    print("Statistical Summary of Marks")
+    print("===== Statistical Summary of Marks =====")
     print(df['Marks'].describe())
 
     # 1. Histogram with Mean and Median
+    print("\n===== Experiment 1: Histogram =====")
+
     plt.figure(figsize=(8, 5))
     sns.histplot(df['Marks'], kde=True)
 
     mean = df['Marks'].mean()
     median = df['Marks'].median()
 
-    plt.axvline(mean, color='red', linestyle='--', label='Mean')
-    plt.axvline(median, color='blue', linestyle=':', label='Median')
+    plt.axvline(mean, color='red',
+                linestyle='--', label='Mean')
+    plt.axvline(median, color='blue',
+                linestyle=':', label='Median')
 
     plt.title("Histogram with Mean and Median")
     plt.xlabel("Marks")
     plt.ylabel("Frequency")
     plt.legend()
-    plt.show()
+    plt.tight_layout()
 
-    # 2. Boxplot
+    plt.savefig("histogram.png", dpi=180)
+    plt.show()
+    plt.close()
+
+    # 2. Boxplot of Age
+    print("\n===== Experiment 2: Boxplot =====")
+
     plt.figure(figsize=(8, 5))
     sns.boxplot(y=df['Age'])
 
     plt.title("Boxplot of Age")
-    plt.show()
+    plt.ylabel("Age")
+    plt.tight_layout()
 
-    # 3. Violin Plot
+    plt.savefig("boxplot.png", dpi=180)
+    plt.show()
+    plt.close()
+
+    # 3. Violin Plot of Age
+    print("\n===== Experiment 3: Violin Plot =====")
+
     plt.figure(figsize=(8, 5))
     sns.violinplot(x=df['Age'])
 
     plt.title("Violin Plot of Age")
     plt.xlabel("Age")
+    plt.tight_layout()
+
+    plt.savefig("violinplot.png", dpi=180)
     plt.show()
+    plt.close()
+
+    # Confirmation
+    print("\n===== Images Saved Successfully =====")
+    print("1. histogram.png")
+    print("2. boxplot.png")
+    print("3. violinplot.png")
 
 
 if __name__ == "__main__":
     main()
-  
+    
+
