@@ -541,20 +541,9 @@ Maths    1.000000  0.947231  0.505051
 Science  0.947231  1.000000  0.428387
 English  0.505051  0.428387  1.000000
 ```
+ 
+![Experiment 10 Output](experiment10.png)
 
-#### 📊 Bivariate & Multivariate Visualizations:
-
-##### 1. Bivariate Scatter Plot
-*Shows the relationship between Maths and Science marks.*
-![Scatter Plot](https://pydata.org)
-
-##### 2. Correlation Matrix Heatmap
-*Displays the correlation strength between subjects using a color-coded grid.*
-![Heatmap](https://pydata.org)
-
-##### 3. Pair Plot Matrix (Multivariate Analysis)
-*Generates a comprehensive grid of pairwise scatter plots and histograms for all features.*
-![Pair Plot](https://pydata.org)
 ### 🔗 Experiment 11 Output:
 ```text
 Original Dataset
