@@ -583,11 +583,13 @@ Date
 2025-11-01    175
 2025-12-01    160
 ``
+## Experiment 11: Time Series Analysis
+
 ### Sales Trend Over Time
-![Sales Trend](./sales_trend.png)
+![Sales Trend](./Sales_trend.png)
 
 ### Monthly Sales Seasonality
-![Monthly Sales](./monthly_sales_seasonality.png)
+![Monthly Sales](./Monthly%20_sales%20season.png)
 
 
 
