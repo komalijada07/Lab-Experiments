@@ -586,13 +586,10 @@ Date
 
 #### 📊 Time Series Visualizations:
 
-##### 1. Sales Trend Line Plot
-*Displays upward or downward sales movement over the months.*
-![Trend Line Plot](https://pydata.org)
+<h3>Experiment 10: Time Series Analysis</h3>
 
-##### 2. Monthly Seasonality Bar Plot
-*Helps identify repeating seasonal behaviors or monthly patterns.*
-![Seasonality Bar Plot](https://pydata.org)
+<img src="experiment10_images/sales_trend.png" width="700">
+<img src="experiment10_images/monthly_sales_seasonality.png" width="700">
 
 ### 🔗 Experiment 12 Output:
 ```text
