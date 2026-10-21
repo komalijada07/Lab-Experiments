@@ -517,17 +517,8 @@ Name: Marks, dtype: float64
 
 #### 📊 Generated Plots & Visualizations:
 
-##### 1. Histogram Plot
-*Shows the continuous distribution of Marks with dashed lines indicating the Mean and Median values.*
-![Histogram Demo](https://githubusercontent.com)
+![Experiment 9 Output - Histogram, Boxplot and Violin Plot](all_graphs%20(1).png)
 
-##### 2. Box Plot
-*Visualizes the distribution of Age, displaying the median, quartiles, and potential outliers.*
-![Boxplot Demo](https://pydata.org)
-
-##### 3. Violin Plot
-*Combines box plot features with a density plot to reveal the structural symmetry of the Age distribution.*
-![Violin Plot Demo](https://pydata.org)
 
 ### 🔗 Experiment 10 Output:
 ```text
