@@ -545,8 +545,9 @@ English  0.505051  0.428387  1.000000
 <img src="correlation_heatmap.png" width="600">
 <img src="pair_plot.png" width="600">
 
+
 ### 🔗 Experiment 11 Output:
-``
+```text
 Original Dataset
           Date  Sales
 0   2025-01-01    120
@@ -575,8 +576,8 @@ Date
 2025-10-01    190
 2025-11-01    175
 2025-12-01    160
+```
 
-## Experiment 10: Time Series Analysis
 
 ### Sales Trend Over Time
 ![Sales Trend](sales_trend.png)
