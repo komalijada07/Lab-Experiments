@@ -80,8 +80,6 @@ def main():
     print("3. violinplot.png")
 
 
-### Experiment 9: Data Visualization
-
 ![Experiment 9 Output Graphs](all_graphs%20(1).png)
 
 if __name__ == "__main__":
