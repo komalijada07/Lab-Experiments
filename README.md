@@ -604,5 +604,6 @@ Dataset:
 9   Oct    240      70   West
 ```
 
-![Dashboard](experiment12_dashboard.png)
+![Dashboard](experiment12_dashboard.png.png)
+
  
