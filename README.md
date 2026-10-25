@@ -604,18 +604,7 @@ Dataset:
 9   Oct    240      70   West
 ```
 
-#### 🌐 Interactive Dashboard Visualizations:
+## Experiment 12: Sales Dashboard
 
-##### 1. Interactive Line Graph
-*Displays the chronological trend of Monthly Sales with hovering data points.*
-![Interactive Line Chart](https://plotly.com)
-
-##### 2. Interactive Bar Graph
-*Visualizes Monthly Profit segmented by different geographical regions.*
-![Interactive Bar Chart](https://plotly.com)
-
-##### 3. Complete Dashboard Layout (Dash App Interface)
-*Combines all interactive plots into a single, cohesive web application framework.*
-![Dashboard Layout](https://plotly.com)
-
+![Sales Dashboard](experiment12_dashboard.png)
  
